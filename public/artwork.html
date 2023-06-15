@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+  Author: Simon Studen
+
+  This is the artwork.html page for my Random Artwork Generator. It includes content for displaying
+  randomly selected art from The Metropolitan Museum of Art Collection API and allows
+  the user to select art from particular departments or include filter queries.
+-->
+<html lang="en" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <!-- Bulma CSS Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simon Studen</title>
+    <script src="artwork.js"></script>
+  </head>
+  <body>
+    <!-- TOP NAVBAR -->
+    <nav class="navbar is-fixed-top is-dark">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-item">Simon</a>
+
+        <!-- Hamburger menu for mobile defices and small screens-->
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a href="index.html" class="navbar-item">Home</a>
+          <a href="index.html" class="navbar-item">Projects</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              For Fun
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="artwork.html" class="navbar-item">Artwork API</a>
+              <a href="classes.html" class="navbar-item">Coursework</a>
+            </div>
+          </div>
+          <a href="http://www.linkedin.com/in/simon-studen" class="navbar-item">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section id="art-container" class="section">
+        <h1>Random Art Display</h1>
+        <!--
+          default image from Wikimedia Commons licensed under CC BY-SA 3.0
+          https://commons.wikimedia.org/wiki/File:
+            Vincent_van_Gogh-Self-Portrait_with_Straw_Hat-Metropolitan_Museum_of_Art.jpg
+          -->
+        <img id="artwork" src="images/van-gogh-self-portrait.jpeg"
+        alt="Vincent van Gogh Self Portrait with Straw Hat">
+        <h2>
+          <span id="artwork-title">Self-Portrait with a Straw Hat</span>
+          <span id="date-created">(1887)</span>
+        </h2>
+        <article>
+          <p>
+            <strong>Artist:</strong>
+            <span id="artist">Vincent van Gogh</span>
+            <span id="artist-lifespan">(1853 - 1890)</span>
+          </p>
+          <p>
+            <strong>Medium:</strong> <span id="medium">Oil Paint</span>
+          </p>
+          <p>
+            <strong>Dimensions:</strong> <span id="dimensions">1′ 4″ x 1′ 1″</span>
+          </p>
+        </article>
+        <article id="department-selection-container">
+          <label for="department-selector" class="label">Choose a department (optional):</label>
+          <div id="selection-container" class="select is-small">
+            <select id="department-selector">
+              <option>Select department</option>
+            </select>
+          </div>
+        </article>
+        <article id="query-input-container">
+          <label for="query-input" class="label">
+            Input word or phrase to query for (required if a department was selected):
+          </label>
+          <input id="query-input" class="input is-small" type="text" placeholder="Query input">
+        </article>
+        <button id="request-btn" class="button is-medium is-primary">
+          Show Me a New Piece
+        </button>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>All images and art information are obtained from
+          <a rel="link" href="https://metmuseum.github.io/">
+            The Metropolitan Museum of Art Collection API.
+          </a>
+        </p>
+        <p>Copyright &copy; Simon Studen. 2023.</p>
+      </div>
+      <div class="content has-text-centered">
+        <a rel="link" href="mailto:simonstuden@gmail.com">
+          <img src="images/envelope-fill.svg" alt="Send me an email button">
+        </a>
+        <a rel="link" href="https://www.linkedin.com/in/simon-studen">
+          <img src="images/linkedin.svg" alt="My LinkedIn button">
+        </a>
+        <a rel="link" href="https://github.com/sstuden2255">
+          <img src="images/github.svg" alt="My GitHub button">
+        </a>
+        <a rel="link" href="documents/simonstuden.pdf">
+          <img src="images/file-earmark-person-fill.svg" alt="My Resume button">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
