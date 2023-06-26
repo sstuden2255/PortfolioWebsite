@@ -1,0 +1,72 @@
+/*
+  Author: Simon Studen
+
+  This is the style.css for all the html pages of my webstie. Most of the styling
+  for the page uses the Bulma CSS Framework, so this file contains a few minor customizations.
+*/
+
+body {
+  font-family: 'League Spartan', sans-serif;
+}
+
+main {
+  margin-top: 20px;
+}
+
+main > .title {
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+a img {
+  height: 24px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.uw-text {
+  color: rgb(98, 66, 165);
+}
+
+.card-footer:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#profile-pic img {
+  width: 80%;
+  border-radius: 15%;
+  box-shadow: 8px 8px 8px;
+}
+
+#intro {
+  margin-right: 50px;
+}
+
+main > h1, #classes-header, #loading-placeholder, #error-alert {
+  text-align: center;
+}
+
+.class-card, #filter-card, #error-alert {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main > section {
+  align-items: center;
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+main > section {
+  display: flex;
+}
