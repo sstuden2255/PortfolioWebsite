@@ -11,10 +11,15 @@ body {
 
 main {
   margin-top: 20px;
+  margin-top: 20px;
 }
 
 main > .title {
   padding-top: 20px;
+}
+
+main #intro p {
+  font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -40,7 +45,6 @@ a img {
 }
 
 #profile-pic img {
-  width: 80%;
   border-radius: 15%;
   box-shadow: 8px 8px 8px;
 }
@@ -60,13 +64,14 @@ main > h1, #classes-header, #loading-placeholder, #error-alert {
 }
 
 main > section {
-  align-items: center;
-}
-
-main {
-  margin-bottom: 20px;
-}
-
-main > section {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main > section img {
+  border-radius: 15%;
+  box-shadow: 8px 8px 8px;
+  height: 250px;
+  width: 250px;
 }
