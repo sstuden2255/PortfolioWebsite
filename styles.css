@@ -51,10 +51,7 @@ a img {
 
 #intro {
   margin-right: 50px;
-}
-
-main > h1, #classes-header, #loading-placeholder, #error-alert {
-  text-align: center;
+  max-width: 800px;
 }
 
 .class-card, #filter-card, #error-alert {
@@ -63,15 +60,25 @@ main > h1, #classes-header, #loading-placeholder, #error-alert {
   margin-right: auto;
 }
 
-main > section {
+#intro-section {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-main > section img {
+#intro-section img {
   border-radius: 15%;
   box-shadow: 8px 8px 8px;
   height: 250px;
   width: 250px;
 }
+
+#vast-info img {
+  /* height: 600px; */
+}
+
+/* .project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
