@@ -7,6 +7,7 @@
 
 body {
   font-family: 'League Spartan', sans-serif;
+  min-width: 600px;
 }
 
 main {
@@ -18,7 +19,7 @@ main > .title {
   padding-top: 20px;
 }
 
-main #intro p {
+main #intro p, #vast-info p {
   font-family: Arial, sans-serif;
 }
 
@@ -66,19 +67,43 @@ a img {
   justify-content: center;
 }
 
-#intro-section img {
+#headshot {
   border-radius: 15%;
   box-shadow: 8px 8px 8px;
   height: 250px;
   width: 250px;
 }
 
-#vast-info img {
-  /* height: 600px; */
+#link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 20px;
 }
 
-/* .project {
+#link-container img, footer img {
+  opacity: 81.5%;
+}
+
+#link-container img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#vast-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+  min-width: 600px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+}
+
+#vast-info {
+  padding-right: 20px;
+}
+
+#vast-screenshot {
+  width: 90%;
+}
