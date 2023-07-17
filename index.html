@@ -47,7 +47,7 @@
       <!-- Intro -->
       <section id="intro-section" class="section">
         <article id="intro">
-          <h1>Hi! I'm <strong>Simon Studen</strong>.</h1>
+          <h1>Hi! I'm <span id="name">Simon Studen</span>.</h1>
           <p>
             I'm a recent Computer Science graduate from the University of Washington.
             As an aspiring mobile and fullstack developer, I'm passionate about building
@@ -80,6 +80,7 @@
         </div>
       </section>
       <section class="section">
+        <h1 class="title">Here's a list of some of the skills, tools, and technologies I use to create my projects! </h1>
         <div id="skills-container">
           <div class="icon-box">
             <i class="devicon devicon-swift-plain"></i>
@@ -118,16 +119,16 @@
             <p>Python</p>
           </div>
           <div class="icon-box">
-            <i class="devicon devicon-sqlite-plain"></i>
-            <p>SQLite</p>
-          </div>
-          <div class="icon-box">
             <i class="devicon devicon-git-plain"></i>
             <p>Git</p>
           </div>
           <div class="icon-box">
             <i class="devicon devicon-github-plain"></i>
             <p>Github</p>
+          </div>
+          <div class="icon-box">
+            <i class="devicon devicon-gitlab-plain"></i>
+            <p>GitLab</p>
           </div>
           <div class="icon-box">
             <i class="devicon devicon-bash-plain"></i>
@@ -169,25 +170,30 @@
               A location-based multiplayer gaming application for iOS.
             </h2>
             <p>
-              Description of Vast: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              VAST is a fun and interactive way to play the game of infection,
+              a modified game of tag with two teams; Infected and Humans. Utilizing a built in
+              map to view the real-time locations of other players, infectors fight to find and
+              infect humans, while humans fight to stay alive!
+              A group project for my Mobile Software Capstone.
             </p>
             <div class="proj-technologies">
-              <!-- TODO: add technology logos -->
-
-              <img src="#"></img>
-              <img src="#"></img>
-              <img src="#"></img>
-              <img src="#"></img>
+              <div class="proj-icon-box">
+                <i class="devicon devicon-swift-plain"></i>
+              </div>
+              <div class="proj-icon-box">
+                <i class="devicon devicon-xcode-plain"></i>
+              </div>
+              <div class="proj-icon-box">
+                <i class="devicon devicon-gitlab-plain"></i>
+              </div>
+              <div class="proj-icon-box">
+                <i class="devicon devicon-figma-plain"></i>
+              </div>
             </div>
-            <!-- TODO: add github link -->
-            <a>View Github Repo</a>
+            <a href="https://gitlab.cs.washington.edu/timmandz/cse481l-capstone">View GitLab Repo</a>
           </section>
-          <img id="vast-screenshot" src="images/vast/vast_map.png" alt="VAST iOS app map image">
+          <img class="vast-screenshot" src="images/vast/vast_map.png" alt="VAST iOS app map screen">
+          <img class="vast-screenshot" src="images/vast/vast_infect_screen.png" alt="VAST iOS app infect screen">
         </div>
       </section>
       <hr>
