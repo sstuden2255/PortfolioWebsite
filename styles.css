@@ -131,8 +131,15 @@ a img {
   min-width: 300px;
 }
 
-#motor-nation-screenshot {
+.proj-link-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.website-screenshot {
   width: 600px;
+  min-width: 600px;
+  max-height: 382px;
 }
 
 .vast-screenshot {
